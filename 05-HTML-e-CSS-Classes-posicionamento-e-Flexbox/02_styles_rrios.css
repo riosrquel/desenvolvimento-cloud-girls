@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+* {
+   margin: 10px;
+   padding: 5px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    /* Estilos para os blocos de conteúdo conforme o design do Figma */ 
+    background-color:#d5b9ad ;
+    color: #44302d;
+}
+.titulo-destaque {
+    color: #a34a5f;
+    }
+    span{
+        color:#664e69   
+    }
+.titulo-blog   {
+    color:#783708fc
+} 
+.urgente {
+color: #5931c5;
+}
+.apresentacao{
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao__conteudo {
+    width: 615px;
+}
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+.apresentacao__links{
+    display: flexbox;
+    justify-content: space-around;
+    gap: 10px;
+    gap: 10px 20px; /* row-gap column gap */
+    row-gap: 10px;
+    column-gap: 20px;
+}
+.apresentacao__links__link{
+    background-color: #cb6840;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color:rgb(59, 17, 37);
+    font-family: 'Montserrat', sans-serif; 
+}

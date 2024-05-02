@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabuleiro de Xadrez</title>
+</head>
+<body>
+  <canvas id="tabuleiro" width="400" height="400"></canvas>
+  <script>
+    const canvas = document.getElementById('tabuleiro');
+    const ctx = canvas.getContext('2d');
+    const tamanhoQuadrado = 50; // Tamanho de cada quadrado do tabuleiro
+    // Desenha o tabuleiro de xadrez
+    for (let i = 0; i < 8; i++) {
+      for (let j = 0; j < 8; j++) {
+        // Alternância entre branco e preto
+        if ((i + j) % 2 === 0) {
+          ctx.fillStyle = 'black';
+        } else {
+          ctx.fillStyle = 'white';
+        }
+        // Desenha o quadrado
+        ctx.fillRect(j * tamanhoQuadrado, i * tamanhoQuadrado, tamanhoQuadrado, tamanhoQuadrado);
+      }
+    }
+  </script>
+</body>
+</html>

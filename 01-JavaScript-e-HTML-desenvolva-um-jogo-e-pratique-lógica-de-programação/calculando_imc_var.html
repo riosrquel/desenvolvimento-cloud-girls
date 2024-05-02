@@ -1,0 +1,119 @@
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    document.write("<br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+	var peso=86.5;
+	var altura=1.67;
+	var imc=(peso/(altura*altura));
+	
+	mostra(" O IMC do usuário é: "+ imc +".");
+</script>	
+
+<script>
+
+function pulaLinha() {
+    document.write("<br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();	
+}
+function calculaimc(peso, altura){
+	
+	var imc=(peso/(altura*altura));
+	mostra(" O IMC do usuário é: "+ imc +".");
+}
+	calculaimc(75.5,1.67);
+</script>
+
+<script>
+
+function pulaLinha() {
+    document.write("<br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();	
+}
+function calculaimc(peso, altura){
+	
+	var imc=(peso/(altura*altura));
+	return imc;
+}
+
+	var imcRaquel = calculaimc(75.5,1.67);
+	var imcGabriel = calculaimc(115,12,1.86);
+	
+	mostra(imcRaquel);
+	mostra(imcGabriel);
+</script>	
+
+
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    document.write("<br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+function calculaimc(peso, altura){
+	
+	return(peso/(altura*altura));
+}
+var nome = prompt("Informe o seu nome");
+	var peso=prompt(nome + "Informe sua peso");
+	var altura=prompt(nome + "Informe seu altura");
+	var imc=(peso/(altura*altura));
+	
+	mostra("Olá "+ nome+" o seu IMC calculado é: "+ imc +".");
+</script>	
+
+
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    document.write("<br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+function calculaimc(peso, altura){
+	
+	return(peso/(altura*altura));
+}
+var nome = prompt("Informe o seu nome");
+	var peso=prompt(nome + "Informe sua peso");
+	var altura=prompt(nome + "Informe seu altura");
+	var Math.round(imc)=(peso/(altura*altura));
+	
+	mostra("Olá "+ nome+" o seu IMC calculado é: "+ imc +".");
+
+if(imc<18.5) {	
+	mostra("Você está a baixo do recomendado pela OMS")
+
+	}
+if (imc>24.9) {
+	mostra("Você está a cima do recomendado pela OMS")
+	}
+
+if (imc>=18.5 && imc<=24.9) {
+
+	mostra("Você está a dentro do recomendado pela OMS")
+	}
+</script>	
