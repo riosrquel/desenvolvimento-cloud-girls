@@ -1,6 +1,6 @@
 const containerVideos = document.querySelector(".videos__container");
 
-const api = fetch("http://localhost:3000/videos")
+/*const api = fetch("http://localhost:3000/videos")
 .then(res => res.json())
 .then((videos) => 
     videos.forEach((video)=> {
@@ -18,10 +18,10 @@ const api = fetch("http://localhost:3000/videos")
 
     })
 )
-/*.catch((error) => {
+catch((error) => {
     containerVideos.innerHTML = `<p> Houve um erro ao carregar os vídeos: ${error} </p>`
-})
-/*async function buscarEMostrarVideos() {
+})*/
+async function buscarEMostrarVideos() {
     try {
     const busca = await fetch("http://localhost:3000/videos")
     const videos = await busca.json();
@@ -44,13 +44,11 @@ const api = fetch("http://localhost:3000/videos")
         })
     } catch(error) {
         containerVideos.innerHTML = `<p> Houve um erro ao carregar os vídeos: ${error} </p>`
-    /*}finally {
-        alert('Isso sempre acontece')
-    }
+   // }finally {
+   //     alert('Isso sempre acontece')
+   // }
     }  
-}  
 
-        
 buscarEMostrarVideos();
 
 const barraDePesquisa = document.querySelector(".psquisa__input");
@@ -88,6 +86,10 @@ function filtrarPorCategoria(filtro) {
         let categoria = video.querySelector (".categoria").textContent.toLowerCase();
         let valorFiltro = filtro.toLowerCase();
 
-        if(!categoria.includes(valorFiltro) && valorFiltro != 'Tudo')
+        if(!categoria.includes(valorFiltro) && valorFiltro != 'Tudo'){
+            video.style.dispay = "none";    
+        }else {
+            video.style.dispay = "block";
+        }
     }   
-}*/
+}
